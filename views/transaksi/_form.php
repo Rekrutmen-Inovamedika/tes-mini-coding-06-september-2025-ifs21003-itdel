@@ -19,12 +19,15 @@ use yii\helpers\ArrayHelper;
     ) ?>
     <?= $form->field($model, 'tindakanIds')->checkboxList(ArrayHelper::map(\app\models\Tindakan::find()->all(), 'id', 'nama_tindakan')) ?>
     <?= $form->field($model, 'obat1_id')->dropDownList(\app\models\Obat::getList(), ['prompt' => 'Pilih Obat 1', 'data-harga' => '']) ?>
+    <?= $form->field($model, 'jumlah1')->textInput(['type' => 'number']) ?>
 
     <?= $form->field($model, 'obat2_id')->dropDownList(\app\models\Obat::getList(), ['prompt' => 'Pilih Obat 2', 'data-harga' => '']) ?>
+    <?= $form->field($model, 'jumlah2')->textInput(['type' => 'number']) ?>
 
     <?= $form->field($model, 'obat3_id')->dropDownList(\app\models\Obat::getList(), ['prompt' => 'Pilih Obat 3', 'data-harga' => '']) ?>
+    <?= $form->field($model, 'jumlah3')->textInput(['type' => 'number']) ?>
+
     <?= $form->field($model, 'total_harga')->textInput() ?>
-    <?= $form->field($model, 'total_harga')->textInput(['readonly' => true]) ?>
 
     <div class="form-group">
         <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>

@@ -80,7 +80,7 @@ class Transaksi extends \yii\db\ActiveRecord
             [['pasien_id'], 'required'],
             [['pasien_id', 'total_harga'], 'integer'],
             [['tanggal_transaksi'], 'default', 'value' => date('Y-m-d')],
-            [['obat1_id', 'obat2_id', 'obat3_id'], 'integer'],
+            [['obat1_id', 'obat2_id', 'obat3_id', 'jumlah1', 'jumlah2', 'jumlah3'], 'integer'],
             [['tindakanIds'], 'required', 'message' => 'Pilih minimal satu tindakan.'],
             [['pasien_id'], 'exist', 'skipOnError' => true, 'targetClass' => Pasien::class, 'targetAttribute' => ['pasien_id' => 'id']],
         ];

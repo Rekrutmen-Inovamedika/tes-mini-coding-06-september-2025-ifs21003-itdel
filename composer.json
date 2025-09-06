@@ -22,9 +22,9 @@
         "miloschuman/yii2-highcharts-widget": "*",
         "2amigos/yii2-chartjs-widget": "~2.0",
         "2amigos/yii2-date-picker-widget": "^0.1.0",
-        "mdmsoft/yii2-admin": "*",
-        "yii2mod/yii2-dynamic-form": "*",
-        "kartik-v/yii2-widget-select2": "@dev"
+        "mdmsoft/yii2-admin": "~2.0",
+        "kartik-v/yii2-widget-select2": "@dev",
+        "wbraganca/yii2-dynamicform": "*"
 
     },
     
